@@ -1,8 +1,9 @@
 import React from 'react'
+import { ContactBlock } from '../styles/contact.styled'
 
 const Contact = () => {
     return (
-        <div className='contact__block'>
+        <ContactBlock className='contact__block'>
             <h2 className='title' >Contactanos</h2>
             <ul className='contacts__list' >
                 <li className='contact__container' >
@@ -25,7 +26,7 @@ const Contact = () => {
                 <p>8442361082</p>
             </div>
 
-        </div>
+        </ContactBlock>
     )
 }
 
