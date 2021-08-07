@@ -10,9 +10,11 @@ import Instagram from '../assets/svgs/instagram'
 import Youtube from '../assets/svgs/youtube'
 import ServicesBanner from '../components/ServicesBanner'
 import Contact from '../components/Contact'
+import Location from '../components/Location'
 import { HomeIntro, BackgroundContainer, LettersAnimation, SocialsContainer } from '../styles/pages/home.styled';
 import Storytelling from '../components/Storytelling';
 import YoutubeComponent from '../components/YoutubeComponent';
+import credentials from '../credentials'
 
 const Home = () => {
 
@@ -51,6 +53,12 @@ const Home = () => {
 
             {/* Contactanos */}
             <Contact />
+
+            {/* Locaction */}
+            {/* <Location containerElement={<div style={{height: '400px'}} />}
+            mapElement={<div style={{height: '100%'}} />}
+            loadingElement= {<div style={{ height: `100%` }} />}
+            googleMapURL={`http://maps.google.com/maps/api/js?v=3.exp&key=${credentials.mapsKey}`} /> */}
 
             {/* SOCIALS */}
             <SocialsContainer className="social__container">

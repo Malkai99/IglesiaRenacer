@@ -15,7 +15,7 @@ const ServicesBanner = () => {
                         <div className="text__container">
                             <p className='title'>Miercoles</p>
                             <p className='subtitle'>Formacion y Crecimiento espiritual</p>
-                            <p className='subtitle'> Horarios 7:30 pm</p>
+                            <p className='subtitle'>7:30 pm</p>
                         </div>
                     </div>
                 </li>
@@ -25,7 +25,7 @@ const ServicesBanner = () => {
                         <div className="text__container">
                             <p className='title'>Viernes</p>
                             <p className='subtitle'>Oracion</p>
-                            <p className='subtitle'>Horarios 7:30pm </p>
+                            <p className='subtitle'>7:30pm </p>
                         </div>
                     </div>
                 </li>
@@ -35,7 +35,7 @@ const ServicesBanner = () => {
                         <div className="text__container">
                             <p className='title'>Domingo</p>
                             <p className='subtitle'>Servicio de Adoracion</p>
-                            <p className='subtitle'>Horarios 10:00 am, 11:30 am,  1:00 pm</p>
+                            <p className='subtitle'>10:00 am, 11:30 am, 1:00 pm</p>
                         </div>
                     </div>
                 </li>

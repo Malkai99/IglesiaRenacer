@@ -32,11 +32,13 @@ const Header = () => {
                 <img src={logo} alt="" />
             </Logo>
             <HeaderLinks className='header__links'>
-                <LinkElement><a ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Estos Somos</p></a></LinkElement>
+                <LinkElement><a ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Volviendo a Casa</p></a></LinkElement>
+                <LinkElement><a ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Creemos</p></a></LinkElement>
+                <LinkElement><a ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Protocolo COVID</p></a></LinkElement>
                 <LinkElement><a><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Busco Iglesia</p></a></LinkElement>
                 <LinkElement><a href="https://www.youtube.com/IglesiaRenacerSaltillo" target="_blank"><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Escuchanos</p></a></LinkElement>
+                <LinkElement><a><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Mi dia</p></a></LinkElement>
                 <LinkElement><a href="#contact__section" ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Contactanos</p></a></LinkElement>
-                <LinkElement><a><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Media</p></a></LinkElement>
             </HeaderLinks>
             {/* <div className="session__container">
                 <p>Ingresa</p>
