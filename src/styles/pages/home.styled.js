@@ -20,6 +20,7 @@ export const BackgroundContainer = styled.div`
   width: 100%;
   height: 100%;
   z-index: 1;
+  background-color: #282c34;
   .image__container{
     position: relative;
     width: 100%;
@@ -103,4 +104,12 @@ export const SocialsContainer = styled.div`
         }
     }
 
+`;
+
+export const VideoContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0;
 `;

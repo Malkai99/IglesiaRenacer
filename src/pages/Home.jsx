@@ -1,8 +1,5 @@
 import { useEffect } from 'react';
 import Layout from '../components/Layout';
-import Header from '../components/Header'
-import Head from '../components/head/Head'
-import logo from '../assets/logo-renacer.png';
 import slide from '../assets/slide_home.jpg';
 import slide2 from '../assets/slide.jpg'
 import Facebook from '../assets/svgs/facebook'
@@ -11,7 +8,7 @@ import Youtube from '../assets/svgs/youtube'
 import ServicesBanner from '../components/ServicesBanner'
 import Contact from '../components/Contact'
 import Location from '../components/Location'
-import { HomeIntro, BackgroundContainer, LettersAnimation, SocialsContainer } from '../styles/pages/home.styled';
+import { HomeIntro, VideoContainer, BackgroundContainer, LettersAnimation, SocialsContainer } from '../styles/pages/home.styled';
 import Storytelling from '../components/Storytelling';
 import YoutubeComponent from '../components/YoutubeComponent';
 import credentials from '../credentials'
@@ -24,8 +21,7 @@ const Home = () => {
     
 
     return (
-        <Layout>
-            <Header />
+        <>
 
             <HomeIntro>
                 {/*BACKGROUND  */}
@@ -38,6 +34,7 @@ const Home = () => {
                     <p>Iglesia Renacer</p>
                 </LettersAnimation>
             </HomeIntro>
+
             <Storytelling />
 
             {/*BACKGROUND  */}
@@ -49,7 +46,9 @@ const Home = () => {
             <ServicesBanner />
 
             {/* Banner video Intro */}
-            <YoutubeComponent embedId={"lD3aYbGpIQk"} />
+            <VideoContainer>
+                <YoutubeComponent embedId={"lD3aYbGpIQk"} />
+            </VideoContainer>
 
             {/* Contactanos */}
             <Contact />
@@ -81,7 +80,7 @@ const Home = () => {
                 </ul>
             </SocialsContainer>
       
-        </Layout>
+        </>
     )
 }
 

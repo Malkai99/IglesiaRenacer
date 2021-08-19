@@ -52,7 +52,7 @@ export const ContactBlock = styled.div`
     @media ${device.md}{
       margin: 0;
       flex-direction: row;
-      margin-left: 50px;
+      margin-left: 30px;
     }
     img{
       width: 150px;

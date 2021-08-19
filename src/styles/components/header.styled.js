@@ -41,6 +41,10 @@ export const Logo = styled.div`
         height: 100%;
         border-radius: 50%;
     }
+    a{
+        width: 100%;
+        height: 100%;
+    }
 `;
 
 export const HeaderLinks = styled.ul`

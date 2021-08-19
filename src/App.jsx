@@ -1,4 +1,5 @@
 import './App.css';
+import Layout from './components/Layout';
 import { Router } from './router/router';
 
 const App = () => {
@@ -7,7 +8,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <Router />
+      <Layout>
+        <Router />
+      </Layout>
     </div>
     
   );
