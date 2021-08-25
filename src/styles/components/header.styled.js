@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { device } from '../utilities/media_queries.styled';
 
 export const HeaderContainer = styled.header`
+    /* position: relative; */
     position: absolute;
     z-index: 10;
     top: 0;
@@ -65,7 +66,7 @@ export const HeaderLinks = styled.ul`
 export const LinkElement = styled.li`
     p{
         font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
+        font-size: 12px;
         display: flex;
         justify-self: center;
         align-items: center;
@@ -73,6 +74,12 @@ export const LinkElement = styled.li`
         position: relative;
         transition: color .25s ease-in-out;
         color: white;
+        @media ${device.md}{
+            font-size: 14px;
+        }
+        @media ${device.lg}{
+            font-size: 18px;
+        }
     }
     p.hover{
     color: #FFDB58;

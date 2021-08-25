@@ -47,7 +47,7 @@ const Home = () => {
 
             {/* Banner video Intro */}
             <VideoContainer>
-                <YoutubeComponent embedId={"lD3aYbGpIQk"} />
+                <YoutubeComponent embedId={"3G7Ax4HN4EU"} />
             </VideoContainer>
 
             {/* Contactanos */}

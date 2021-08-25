@@ -5,18 +5,18 @@ import styled from 'styled-components';
 const Container = styled.div`
     position: relative;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 20px;
     margin-bottom: 80px;
 `;
 
-const MiDia = () => {
+const Media = () => {
 
     return (
         <Container>
-            <h2>Bienvenidos a Mi Dia</h2>
+            <h2>Descubre nuestra Multimedia</h2>
             <ChannelYT />
         </Container>
     )
 }
 
-export default MiDia
+export default Media

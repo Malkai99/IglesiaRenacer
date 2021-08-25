@@ -1,5 +1,6 @@
- import React from 'react'
+import React from 'react'
 import logo from '../assets/logo-renacer.png';
+import { Link } from 'react-router-dom'
 import { HeaderContainer, HeaderLinks, LinkElement, BurgerMenu, Logo, MenuLinks,
      MenuBackground, MenuContainer } from '../styles/components/header.styled';
 
@@ -15,7 +16,7 @@ const Header = () => {
     }
     
     function handleMenu(){
-        console.log('aksmdkl ', document.querySelector('.modal__menu').classList.contains('is-open'))
+        // console.log('aksmdkl ', document.querySelector('.modal__menu').classList.contains('is-open'))
         if(document.querySelector('.modal__menu').classList.contains('is-open')){
             document.querySelector('.modal__menu').classList.remove('is-open')
             document.getElementById('burger__menu').classList.remove('close__btn')
@@ -34,12 +35,12 @@ const Header = () => {
                 </a>
             </Logo>
             <HeaderLinks className='header__links'>
-                <LinkElement><a ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Volviendo a Casa</p></a></LinkElement>
-                <LinkElement><a ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Creemos</p></a></LinkElement>
+                <LinkElement><a href='/volviendo-a-casa'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Volviendo a Casa</p></a></LinkElement>
+                <LinkElement><a href='/creemos'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Creemos</p></a></LinkElement>
                 <LinkElement><a href='/protocolo-covid'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Protocolo COVID</p></a></LinkElement>
-                <LinkElement><a><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Busco Iglesia</p></a></LinkElement>
+                <LinkElement><a href='/busco-iglesia'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Busco Iglesia</p></a></LinkElement>
                 <LinkElement><a href="https://www.youtube.com/IglesiaRenacerSaltillo" target="_blank"><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Escuchanos</p></a></LinkElement>
-                <LinkElement><a href='/mi-dia'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Mi dia</p></a></LinkElement>
+                <LinkElement><a href='/media'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Media</p></a></LinkElement>
                 <LinkElement><a href="/#contact__section" ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Contactanos</p></a></LinkElement>
             </HeaderLinks>
             {/* <div className="session__container">
@@ -53,11 +54,13 @@ const Header = () => {
             <MenuBackground className="modal__menu">
                 <MenuContainer className="menu__container">
                     <MenuLinks>
-                        <LinkElement><a ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Estos Somos</p></a></LinkElement>
-                        <LinkElement><a><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Busco Iglesia</p></a></LinkElement>
-                        <LinkElement><a href="https://www.youtube.com/IglesiaRenacerSaltillo" target="_blank"><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Escuchanos</p></a></LinkElement>
-                        <LinkElement><a href="#contact__section" ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Contactanos</p></a></LinkElement>
-                        <LinkElement><a><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Media</p></a></LinkElement>
+                    <LinkElement><a href='/volviendo-a-casa'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Volviendo a Casa</p></a></LinkElement>
+                    <LinkElement><a href='/creemos'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Creemos</p></a></LinkElement>
+                    <LinkElement><a href='/protocolo-covid'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Protocolo COVID</p></a></LinkElement>
+                    <LinkElement><a href='/busco-iglesia'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Busco Iglesia</p></a></LinkElement>
+                    <LinkElement><a href="https://www.youtube.com/IglesiaRenacerSaltillo" target="_blank"><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Escuchanos</p></a></LinkElement>
+                    <LinkElement><a href='/media'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Media</p></a></LinkElement>
+                    <LinkElement><a href="/#contact__section" ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Contactanos</p></a></LinkElement>
                     </MenuLinks>
                 </MenuContainer>
             </MenuBackground>

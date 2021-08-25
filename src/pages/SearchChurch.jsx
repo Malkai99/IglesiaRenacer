@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import image from '../assets/protocoloCovid__compress.jpg'
+import image from '../assets/service-min.jpg'
 
 const Container = styled.div`
     width: 100%;
@@ -37,29 +37,29 @@ const TextContainer = styled.div`
     }
 `;
 
-const Protocolo = () => {
+const SearchChurch = () => {
     return (
         <Container>
-            <h2>Protocolo covid</h2>
+            <h2>Busco Iglesia</h2>
             <BackgroundContainer className="banner__container" >
                 <img src={image} className="image__container"></img>
             </BackgroundContainer>
             <TextContainer>
                 <p>
-                En Renacer contaremos con todas las medidas de higiene y seguridad para que tú y tus acompañantes estén seguros y tranquilos durante cada momento de la reunión.
-                <br/>
-                Favor de tomar en cuenta las siguientes regulaciones. ¡Recuerda que juntos nos cuidamos mejor!
+                    En Renacer estamos preocupados por el bienestar espiritual de nuestra comunidad, 
+                    si por alguna razón no tienes casa espiritual, consideranos tu familia. 
                 </p>
-                <ul>
-                    <li>Usa tu cubrebocas en todo momento.</li>
-                    <li>Mantén una sana distancia.</li>
-                    <li>Evita saludar de mano, abrazo o beso.</li>
-                    <li>Usa el asiento asignado por nuestro equipo.</li>
-                </ul>
+                <p>
+                    En nuestra iglesia oramos y trabajamos por el crecimiento integral de cada persona, 
+                    a través de reuniones de oración, cursos de crecimiento y formación espiritual, 
+                    discípulados intensivos y reuniones de adoración. Buscamos que la Palabra y la
+                    Presencia de Dios nos abrace y levante.
+                </p>
+                
                 
             </TextContainer>
         </Container>
     )
 }
 
-export default Protocolo
+export default SearchChurch
