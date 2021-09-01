@@ -39,9 +39,9 @@ const Header = () => {
                 <LinkElement><a href='/creemos'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Creemos</p></a></LinkElement>
                 <LinkElement><a href='/protocolo-covid'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Protocolo COVID</p></a></LinkElement>
                 <LinkElement><a href='/busco-iglesia'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Busco Iglesia</p></a></LinkElement>
-                <LinkElement><a href="https://www.youtube.com/IglesiaRenacerSaltillo" target="_blank"><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Escuchanos</p></a></LinkElement>
+                <LinkElement><a href="https://www.youtube.com/IglesiaRenacerSaltillo" target="_blank"><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Escúchanos</p></a></LinkElement>
                 <LinkElement><a href='/media'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Media</p></a></LinkElement>
-                <LinkElement><a href="/#contact__section" ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Contactanos</p></a></LinkElement>
+                <LinkElement><a href="/#contact__section" ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Contáctanos</p></a></LinkElement>
             </HeaderLinks>
             {/* <div className="session__container">
                 <p>Ingresa</p>
@@ -58,9 +58,9 @@ const Header = () => {
                     <LinkElement><a href='/creemos'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Creemos</p></a></LinkElement>
                     <LinkElement><a href='/protocolo-covid'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Protocolo COVID</p></a></LinkElement>
                     <LinkElement><a href='/busco-iglesia'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Busco Iglesia</p></a></LinkElement>
-                    <LinkElement><a href="https://www.youtube.com/IglesiaRenacerSaltillo" target="_blank"><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Escuchanos</p></a></LinkElement>
+                    <LinkElement><a href="https://www.youtube.com/IglesiaRenacerSaltillo" target="_blank"><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Escúchanos</p></a></LinkElement>
                     <LinkElement><a href='/media'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Media</p></a></LinkElement>
-                    <LinkElement><a href="/#contact__section" ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Contactanos</p></a></LinkElement>
+                    <LinkElement><a href="/#contact__section" ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Contáctanos</p></a></LinkElement>
                     </MenuLinks>
                 </MenuContainer>
             </MenuBackground>

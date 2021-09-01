@@ -51,7 +51,7 @@ const BackImportant = () => {
                 </p>
                 <p>
                     Creemos que muchas de las áreas que se han roto en nuestra vida no se pueden 
-                    arreglan con un parche o un curita, sino que necesitan volver a ser 
+                    arreglar con un parche o un curita, sino que necesitan volver a ser 
                     hechas por las manos de Dios, para recuperar el propósito original para el que 
                     fueron creadas.
                 </p>

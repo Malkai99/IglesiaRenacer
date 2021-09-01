@@ -41,7 +41,7 @@ const WeBelieve = () => {
                 Renacer es una iglesia para todos, dependiente de la gracia divina, genuina,
                 respetuosa, cercana a la gente, apasionada por la adoración, con una atmósfera
                 de fe y libertad. Sin denominación, contemporánea, centrada en Jesús, pentecostal,
-                expectante a la voz de Dios, comprometida con la enseñanza de toda la bíblia
+                expectante a la voz de Dios, comprometida con la enseñanza de toda la biblia
                 y con una predicación inspirada y desafiante.
             </TextContainer>
             <TextContainer>

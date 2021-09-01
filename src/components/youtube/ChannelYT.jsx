@@ -25,20 +25,37 @@ const ChannelYT = () => {
     const [videosResults, setVideosResults] = useState([])
     const API = 'AIzaSyB65UagcE1m5dYUNzM5TTEG3HA9KmWBmxE'
     const channelID = 'UCCB9VqltMqGpb1kMura_ycg'
-    const results = 9
+    const results = 50
     
-    let channleURl = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelID}&maxResults=${results}&order=date&key=${API}`
+    let channelUrl = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelID}&maxResults=${results}&order=date&key=${API}`
 
     useEffect(() => {
-        fetchVideosChannel(channleURl)
+        if(videosResults.length !== 0) return;
+        fetchVideosChannel(channelUrl)
     }, []);
+
+    function getRandomElements(arr, num) {
+        let result = new Array(num),
+        len = arr.length,
+        taken = new Array(len);
+        if (num > len)
+            throw new RangeError("getRandom: more elements taken than available");
+        while (num--) {
+            var x = Math.floor(Math.random() * len);
+            result[num] = arr[x in taken ? taken[x] : x];
+            taken[x] = --len in taken ? taken[len] : len;
+        }
+        return result;
+    }
 
     function fetchVideosChannel(url) {
         fetch(url)
             .then((response) => response.json())
             .then((result) => {
                 const resultVideos = result.items.map(item => item.id.videoId)
-                setVideosResults(resultVideos)
+                // const videoIDs = resultVideos[Math.floor(Math.random() * resultVideos.length)]
+                const videoIDs = getRandomElements(resultVideos,9)
+                setVideosResults(videoIDs)
             })
             .catch((error) => console.error(error))
     }

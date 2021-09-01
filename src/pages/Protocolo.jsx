@@ -46,7 +46,7 @@ const Protocolo = () => {
             </BackgroundContainer>
             <TextContainer>
                 <p>
-                En Renacer contaremos con todas las medidas de higiene y seguridad para que tú y tus acompañantes estén seguros y tranquilos durante cada momento de la reunión.
+                En Renacer contamos con todas las medidas de higiene y seguridad para que tú y tus acompañantes estén seguros y tranquilos durante cada momento de la reunión.
                 <br/>
                 Favor de tomar en cuenta las siguientes regulaciones. ¡Recuerda que juntos nos cuidamos mejor!
                 </p>

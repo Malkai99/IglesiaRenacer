@@ -47,12 +47,12 @@ const SearchChurch = () => {
             <TextContainer>
                 <p>
                     En Renacer estamos preocupados por el bienestar espiritual de nuestra comunidad, 
-                    si por alguna razón no tienes casa espiritual, consideranos tu familia. 
+                    si por alguna razón no tienes casa espiritual, considéranos tu familia. 
                 </p>
                 <p>
                     En nuestra iglesia oramos y trabajamos por el crecimiento integral de cada persona, 
                     a través de reuniones de oración, cursos de crecimiento y formación espiritual, 
-                    discípulados intensivos y reuniones de adoración. Buscamos que la Palabra y la
+                    discipulados intensivos y reuniones de adoración. Buscamos que la Palabra y la
                     Presencia de Dios nos abrace y levante.
                 </p>
                 

@@ -4,7 +4,7 @@ import { ContactBlock } from '../styles/components/contact.styled'
 const Contact = () => {
     return (
         <ContactBlock className='contact__block' id='contact__section'>
-            <h2 className='title' >Contactanos</h2>
+            <h2 className='title' >Contáctanos</h2>
             <ul className='contacts__list' >
                 <li className='contact__container' >
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaiKiPcLJj7ufrj6M2KaPwyCT4lDSFA5oog&usqp=CAU" alt="" />
@@ -21,10 +21,10 @@ const Contact = () => {
                     </div>
                 </li>
             </ul>
-            {/* <div className="general__contact">
+            <div className="general__contact">
                 <p>Iglesia Renacer</p>
                 <p>8442361082</p>
-            </div> */}
+            </div>
 
         </ContactBlock>
     )
