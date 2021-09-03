@@ -11,7 +11,9 @@ import Location from '../components/Location'
 import { HomeIntro, VideoContainer, BackgroundContainer, LettersAnimation, SocialsContainer } from '../styles/pages/home.styled';
 import Storytelling from '../components/Storytelling';
 import YoutubeComponent from '../components/YoutubeComponent';
+import VideoElement from '../components/VideoElement';
 import credentials from '../credentials'
+import videoMedia from '../assets/video/video__banner.mp4'
 
 const Home = () => {
 
@@ -47,7 +49,8 @@ const Home = () => {
 
             {/* Banner video Intro */}
             <VideoContainer>
-                <YoutubeComponent embedId={"3G7Ax4HN4EU"} />
+                <VideoElement srcMedia={videoMedia} />
+                {/* <YoutubeComponent embedId={"3G7Ax4HN4EU"} /> */}
             </VideoContainer>
 
             {/* Contactanos */}
