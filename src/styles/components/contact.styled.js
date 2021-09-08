@@ -55,7 +55,7 @@ export const ContactBlock = styled.div`
       margin-left: 30px;
     }
     img{
-      width: 150px;
+      width: 120px;
       height: auto;
       border-radius: 50%;
     }
@@ -74,6 +74,12 @@ export const ContactBlock = styled.div`
     }
     a:hover{
       color: #FFDB58;
+    }
+    .name{
+      font-size: 22px;
+    }
+    .email{
+      font-size: 18px;
     }
   }
 `;

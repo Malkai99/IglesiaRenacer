@@ -14,6 +14,7 @@ import YoutubeComponent from '../components/YoutubeComponent';
 import VideoElement from '../components/VideoElement';
 import credentials from '../credentials'
 import videoMedia from '../assets/video/video__banner.mp4'
+import videoMin from '../assets/video/video_min.mp4'
 
 const Home = () => {
 
@@ -49,8 +50,8 @@ const Home = () => {
 
             {/* Banner video Intro */}
             <VideoContainer>
-                <VideoElement srcMedia={videoMedia} />
-                {/* <YoutubeComponent embedId={"3G7Ax4HN4EU"} /> */}
+                {/* <VideoElement srcMedia={videoMin} /> */}
+                <YoutubeComponent embedId={"g9dhVnFstfk"} />
             </VideoContainer>
 
             {/* Contactanos */}
