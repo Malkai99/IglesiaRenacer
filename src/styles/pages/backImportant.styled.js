@@ -1,25 +1,28 @@
 import styled from 'styled-components';
-import { device } from '../utilities/media_queries.styled'
+import { device } from '../../styles/utilities/media_queries.styled'
 
 export const Container = styled.div`
     width: 100%;
     height: 100%;
-    /* margin: 100px 0; */
 `;
 
-export const Intro = styled.div`
+export const BackgroundContainer2 = styled.div`
+  position: relative;
+  top: 0;
+  width: 90%;
+  height: auto;
+  z-index: 1;
+  background-color: #282c34;
+  margin: 0 auto;
+  .image__container{
     position: relative;
     width: 100%;
-    height: 100vh;
-    @media ${device.sm}{
-        height: 100vh;
-    }
-`;
-
-export const Wrapper = styled.div`
-    position: relative;
-    width: 85%;
-    margin: 0 auto;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -28,23 +31,14 @@ export const TextContainer = styled.div`
     margin: 30px auto;
     text-align: left;
     p{
-        font-size: 18px;
-        letter-spacing: .25px;
-        /* line-height: 24px; */
-    }
-    span{
-        font-family: 'Lobster', cursive;
-        font-family: 'Fjalla One', sans-serif;
-        font-size: 32px;
-    }
-    q{
         font-size: 22px;
-        letter-spacing: .25px;
     }
     &.intro{
+        pointer-events: none;
+        user-select: none;
         position: absolute;
         z-index: 5;
-        top: 42%;
+        top: 55%;
         left: 5%;
         width: 85%;
         opacity: 0;
@@ -69,23 +63,12 @@ export const TextContainer = styled.div`
     }
 `;
 
-export const TitleContainer = styled.h3`
+export const Intro = styled.div`
     position: relative;
-    text-align: left;
-    width: 85%;
-    margin: 30px auto;
-`;
-
-export const ListContainer = styled.ul`
-    position: relative;
-    width: 85%;
-    margin: 30px auto;
-    text-align: left;
-    li{
-        margin: 20px auto;
-        font-size: 18px;
-        letter-spacing: .5px;
-        line-height: 24px;
+    width: 100%;
+    height: 100vh;
+    @media ${device.sm}{
+        height: 100vh;
     }
 `;
 
@@ -96,6 +79,8 @@ export const BackgroundContainer = styled.div`
   height: 100%;
   z-index: 1;
   background-color: #282c34;
+  pointer-events: none;
+  user-select: none;
   .image__container{
     position: relative;
     width: 100%;
@@ -124,6 +109,8 @@ export const LettersAnimation = styled.div`
     transform: translateX(-100%);
     opacity: 0;
     transition: all 750ms ease-in-out 100ms;
+    pointer-events: none;
+    user-select: none;
     &.running{
         opacity: 1;
         transform: translateX(0%);

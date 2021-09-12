@@ -4,22 +4,33 @@ import { device } from '../utilities/media_queries.styled'
 export const Container = styled.div`
     width: 100%;
     height: 100%;
-    /* margin: 100px 0; */
 `;
 
-export const Intro = styled.div`
+export const BackgroundContainer = styled.div`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #282c34;
+  .image__container{
     position: relative;
     width: 100%;
-    height: 100vh;
-    @media ${device.sm}{
-        height: 100vh;
-    }
-`;
-
-export const Wrapper = styled.div`
-    position: relative;
-    width: 85%;
-    margin: 0 auto;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    object-fit: cover;
+  }
+  .background{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      background-color: rgba(0,0,0,.5);
+      z-index: 5;
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -28,14 +39,7 @@ export const TextContainer = styled.div`
     margin: 30px auto;
     text-align: left;
     p{
-        font-size: 18px;
-        letter-spacing: .25px;
-        /* line-height: 24px; */
-    }
-    span{
-        font-family: 'Lobster', cursive;
-        font-family: 'Fjalla One', sans-serif;
-        font-size: 32px;
+        font-size: 22px;
     }
     q{
         font-size: 22px;
@@ -69,53 +73,6 @@ export const TextContainer = styled.div`
     }
 `;
 
-export const TitleContainer = styled.h3`
-    position: relative;
-    text-align: left;
-    width: 85%;
-    margin: 30px auto;
-`;
-
-export const ListContainer = styled.ul`
-    position: relative;
-    width: 85%;
-    margin: 30px auto;
-    text-align: left;
-    li{
-        margin: 20px auto;
-        font-size: 18px;
-        letter-spacing: .5px;
-        line-height: 24px;
-    }
-`;
-
-export const BackgroundContainer = styled.div`
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: #282c34;
-  .image__container{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: blur(2px);
-    object-fit: cover;
-  }
-  .background{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      background-color: rgba(0,0,0,.5);
-      z-index: 5;
-  }
-`;
-
 export const LettersAnimation = styled.div`
     position: absolute;
     z-index: 6;
@@ -131,7 +88,7 @@ export const LettersAnimation = styled.div`
     p{
         /* opacity: 0;
         transition: opacity 250ms ease-in-out 100ms ; */
-        font-size: 52px;
+        font-size: 48px;
         text-align: left;
         padding-left: 10px;
         font-family: 'Montserrat', sans-serif;
@@ -150,5 +107,14 @@ export const LettersAnimation = styled.div`
         @media ${device.md}{
             font-size: 100px;
         }
+    }
+`;
+
+export const Intro = styled.div`
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    @media ${device.sm}{
+        height: 100vh;
     }
 `;

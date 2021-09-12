@@ -1,7 +1,7 @@
 
-import service from '../assets/service.jpg'
-import service2 from '../assets/service-2.jpg'
-import service3 from '../assets/service-3.jpg'
+import service from '../assets/images/services/miercoles.jpeg'
+import service2 from '../assets/images/services/viernes.jpeg'
+import service3 from '../assets/images/services/domingo.jpeg'
 import { ServicesContainer } from '../styles/components/services.styled'
 
 

@@ -54,10 +54,16 @@ export const ContactBlock = styled.div`
       flex-direction: row;
       margin-left: 30px;
     }
-    img{
+    .image__container{
       width: 120px;
-      height: auto;
-      border-radius: 50%;
+      height: 120px;
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
     }
   }
 
@@ -80,6 +86,27 @@ export const ContactBlock = styled.div`
     }
     .email{
       font-size: 18px;
+    }
+  }
+
+  .general__contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contact__info{
+      margin-left: 10px;
+    }
+    .image__container{
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 1px solid white;
+      /* background-color: black; */
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 `;

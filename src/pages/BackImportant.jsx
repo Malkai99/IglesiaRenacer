@@ -1,54 +1,33 @@
-import React from 'react'
-import styled from 'styled-components';
+import React,{ useEffect } from 'react'
 import image from '../assets/service-min.jpg'
+import { Container, BackgroundContainer, TextContainer, LettersAnimation, Intro } from '../styles/pages/backImportant.styled'
 
-const Container = styled.div`
-    width: 100%;
-    height: 100%;
-    margin: 100px 0;
-`;
-
-const BackgroundContainer = styled.div`
-  position: relative;
-  top: 0;
-  width: 90%;
-  height: auto;
-  z-index: 1;
-  background-color: #282c34;
-  margin: 0 auto;
-  .image__container{
-    position: relative;
-    width: 100%;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    object-fit: contain;
-  }
-`;
-
-const TextContainer = styled.div`
-    position: relative;
-    width: 85%;
-    margin: 30px auto;
-    text-align: left;
-    p{
-        font-size: 22px;
-    }
-`;
 
 const BackImportant = () => {
+    useEffect(() => {
+        document.querySelector('.letter__animations').classList.add('running')
+        document.querySelector('.intro').classList.add('visible')
+      },[]);
+
     return (
         <Container>
-            <h2>Volviendo a casa</h2>
-            <BackgroundContainer className="banner__container" >
-                <img src={image} className="image__container"></img>
-            </BackgroundContainer>
+            <Intro>
+                <BackgroundContainer className="banner__container" >
+                    <div className="background"></div>
+                    <img src={image} className="image__container"></img>
+                    <TextContainer className='intro'>
+                        <q>
+                            El nombre de nuestra congregación tiene una estrecha relación con el llamado que recibimos de parte 
+                            de nuestro Señor y nuestra forma de hacer iglesia.
+                        </q>
+                    </TextContainer>
+                </BackgroundContainer>
+                <LettersAnimation className="letter__animations">
+                    <p>Volviendo a casa</p>
+                </LettersAnimation>
+            </Intro>
+
             <TextContainer>
-                <p>
-                    El nombre de nuestra congregación tiene una estrecha relación con el llamado que recibimos de parte 
-                    de nuestro Señor y nuestra forma de hacer iglesia.
-                </p>
                 <p>
                     Creemos que muchas de las áreas que se han roto en nuestra vida no se pueden 
                     arreglar con un parche o un curita, sino que necesitan volver a ser 

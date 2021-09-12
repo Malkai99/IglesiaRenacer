@@ -60,7 +60,7 @@ const Header = () => {
                     <LinkElement><a href='/busco-iglesia'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Busco Iglesia</p></a></LinkElement>
                     <LinkElement><a href="https://www.youtube.com/IglesiaRenacerSaltillo" target="_blank"><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Escúchanos</p></a></LinkElement>
                     <LinkElement><a href='/media'><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Media</p></a></LinkElement>
-                    <LinkElement><a href="/#contact__section" ><p onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Contáctanos</p></a></LinkElement>
+                    <LinkElement><a href="/#contact__section" ><p onClick={() => handleMenu()} onMouseOver={(e) => overLink(e)} onMouseLeave={(e) => overLink(e)}>Contáctanos</p></a></LinkElement>
                     </MenuLinks>
                 </MenuContainer>
             </MenuBackground>

@@ -9,7 +9,7 @@ const WeBelieve = () => {
     useEffect(() => {
         document.querySelector('.letter__animations').classList.add('running')
         document.querySelector('.intro').classList.add('visible')
-      },);
+      },[]);
 
     return (
         <Container>
@@ -30,7 +30,6 @@ const WeBelieve = () => {
                 <LettersAnimation className="letter__animations">
                     <p>Creemos</p>
                 </LettersAnimation>
-
             </Intro>
 
             <Wrapper>
